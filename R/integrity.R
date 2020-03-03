@@ -16,6 +16,7 @@ make_raw_data_spec <- function(folder,out,add_comment=TRUE){
    hashes <- lapply(files,function(f){
       priogrid::get_folder_fingerprint(priogrid::datapath(f))
    })
+   names(hashes) <- files
    rep <- yaml::as.yaml(hashes)
    if(add_comment){
       rep <- paste(comment,rep,sep = "\n\n")
