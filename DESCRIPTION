@@ -1,0 +1,11 @@
+Package: pgaux 
+Title: PRIOGrid Replication Code 
+Version: 0.0.0.9000
+Authors@R: c(person("Peder", "Landsverk", email = "pglandsverk@gmail.com", role = c("aut","cre")))
+Description: Code used for compiling the official PRIO-GRID spec. 
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports: priogrid
+Suggests: testthat
+RoxygenNote: 6.1.1
